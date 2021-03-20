@@ -19,10 +19,7 @@ Description:
 
 GOTO: 2
 
-
-
 File standard:
-
 
 ```
 5 // simagle
@@ -31,9 +28,35 @@ File standard:
 3 // chemi pozicia x
 4 // goal y
 3 // goal x
+4 // move count
 +---+
 |---|
 |- @|
 |-  |
 +--x+
 ```
+
+### player
+
+1. current position `level start position`
+2. icon `load from icon.txt || get icon from cin`
+
+---
+
+### level list
+
+1. level count `const`
+2. max level unlocked `load from level.txt`
+
+---
+
+### level `load from x.txt`
+
+1. height
+2. width
+3. player start position
+4. goal position
+5. move count
+6. map (char[][])
+
+---
