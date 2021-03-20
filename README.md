@@ -18,3 +18,22 @@ Description:
 5. process and print game info (qula)
 
 GOTO: 2
+
+
+
+File standard:
+
+
+```
+5 // simagle
+5 // sigane
+2 // chemi pozicia y
+3 // chemi pozicia x
+4 // goal y
+3 // goal x
++---+
+|---|
+|- @|
+|-  |
++--x+
+```
