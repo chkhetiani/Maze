@@ -5,7 +5,7 @@
 Description:
 
 1. print game info
-2. print level list
+2. print menu
    1. level selector
 3. game stater (bazidan kitxulobs dafas + svlebis raodenobas)
 4. game:
@@ -43,7 +43,7 @@ File standard:
 
 ---
 
-### level list
+### menu
 
 1. level count `const`
 2. max level unlocked `load from level.txt`
@@ -60,3 +60,38 @@ File standard:
 6. map (char[][])
 
 ---
+
+1. game
+
+   1. current_player
+      1. current_position
+         1. x
+         2. y
+      2. icon
+   2. current_level
+      1. number
+      2. height
+      3. width
+      4. start_position
+         1. x
+         2. y
+      5. goal_position
+         1. x
+         2. y
+      6. move_count
+      7. map
+
+2. menu
+   1. level_count
+   2. max_level
+
+---
+
+print_level_list example:
+
+```
+1.
+2. [locked]
+3. [locked]
+4. [locked]
+```
