@@ -4,16 +4,21 @@ namespace maze {
 		int max_level;
 		
 		void print_game_info() {
-//			 example
-//			 same playing instrcutions
+		std::cout<<"The Maze"<<std::endl;
+		std::cout<<"cross the barrier and win"<<std::endl;
 		}
 		
 		void print_level_list() {
-//			example
-//			1.
-//			2. [locked]
-//			3. [locked]
-//			4. [locked]
+			std::cout<<"In maze we have a four difficult level"<<std::endl;
+			
+			std::cout<<"level1 [unlocked]"<<std::endl;
+			std::cout<<"level2 [locked]"<<std::endl;
+			std::cout<<"level3 [locked]"<<std::endl;
+			std::cout<<"level4 [locked]"<<std::endl;
+			
+			std::cout<<"finish the level and unlock new one";
+			
+			
 		}
 		
 		int select_level() {
