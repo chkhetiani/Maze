@@ -1,3 +1,4 @@
+
 namespace maze {
 	struct level {
 		int number;

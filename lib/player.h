@@ -1,4 +1,3 @@
-#include "position.h"
 
 namespace maze {
 	struct player {

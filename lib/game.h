@@ -1,19 +1,18 @@
-#include "player.h"
-#include "level.h"
-
 namespace maze {
 	struct game {
 		player current_player;
-		level curret_level;
+		level current_level;
+		// dabrkoleba #
+		// mizani x
 		
 		void draw_game_board() {
 //			example
 //          moves left: x
-//			+---+
-//			|---|
-//			|- @|
-//			|-  |
-//			+--x+
+//			######
+//			#    #
+//			##@# #
+//			## # #
+//			####x#
 		}
 		
 		char get_player_input() {
@@ -26,7 +25,7 @@ namespace maze {
 			// change number of moves left
 		}
 		
-		string is_game_over() {
+		std::string is_game_over() {
 			// examples
 			// win
 			// lose
