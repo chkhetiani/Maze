@@ -9,16 +9,10 @@ namespace maze {
 		}
 		
 		void print_level_list() {
-			std::cout<<"In maze we have a four difficult level"<<std::endl;
-			
-			std::cout<<"level1 [unlocked]"<<std::endl;
-			std::cout<<"level2 [locked]"<<std::endl;
-			std::cout<<"level3 [locked]"<<std::endl;
-			std::cout<<"level4 [locked]"<<std::endl;
-			
-			std::cout<<"finish the level and unlock new one";
-			
-			
+		for(int i = 1; i <= 5; ++i)
+	{
+		cout<<"level: "<<i<<endl;
+	}
 		}
 		
 		int select_level() {
