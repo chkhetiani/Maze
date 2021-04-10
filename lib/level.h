@@ -11,6 +11,6 @@ namespace maze {
 
 		int move_count;
 
-		std::string map[];	
+		std::string map[100];	
 	};
 }
