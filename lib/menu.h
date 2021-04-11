@@ -10,7 +10,7 @@ namespace maze {
 		
 		void print_level_list() {
 		for(int i = 1; i <= level_count; ++i){
-			std::cout<<"level: "<<level_count<<std::endl;
+			std::cout<<"level: "<<max_level<<std::endl;
 		}
 		
 		}
