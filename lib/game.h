@@ -6,14 +6,28 @@ namespace maze {
 		// mizani x
 		
 		void draw_game_board() {
-//			example
-//          moves left: x
-//			######
-//			#    #
-//			##@# #
-//			## # #
-//			####x#
-		}
+		
+	system("cls");
+			std::cout << "moves left: " << current_level.move_count << std::endl;
+			
+			for (int i = 0; i < current_level.height; i++) {
+				for (int j = 0; j < current_level.width; j++) {
+					if (current_level.goal_position.x == i 
+						&& current_level.goal_position.y == j ) {
+						std::cout << 'x';
+					}
+					else if (current_player.current_position.x == i
+						&& current_player.current_position.y == j) {
+						std::cout << current_player.icon;
+					}
+					else {
+						std::cout << current_level.map[i][j];	
+					}
+				}
+				std::cout << std::endl;
+			}
+		
+}
 		
 		char get_player_input() {
 //			example
