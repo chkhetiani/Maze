@@ -21,7 +21,6 @@ namespace maze {
 		
 		int select_level() {
 			
-			
-		
+		}
 	}
 }; // 20;30 samshabati 20 April
