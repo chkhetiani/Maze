@@ -69,11 +69,17 @@ namespace maze {
 		}
 		
 		std::string is_game_over() {
+			
+			if (current_player.current_position.x == current_level.goal_position.x
+				&& current_player.current_position.y == current_level.goal_position.y) {
+				return "win";
+			}
+			
+			if (current_level.move_count == 0) {
+				return "lose";
+			}
+			
 			return "playing";
-			// examples
-			// win
-			// lose
-			// playing
 		}
 	};
 }

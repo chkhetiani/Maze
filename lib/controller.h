@@ -14,6 +14,7 @@ namespace maze {
 			game g;
 			
 			while(true) {
+				system("cls");
 				m.print_game_info();
 				
 				p.select_player_icon();
@@ -39,6 +40,8 @@ namespace maze {
 					state = g.is_game_over();
 				}
 				
+				g.draw_game_board();
+				
 				if (state == "win") {
 					if (selected_level == m.max_level) {
 						m.max_level++;
@@ -49,6 +52,9 @@ namespace maze {
 				else {
 					std::cout << "you lose" << std::endl;
 				}
+				
+				std::cout << "press any key to continue" << std::endl;
+				char x = getch();
 			}			
 		}
 	};

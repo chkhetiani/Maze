@@ -15,15 +15,15 @@ namespace maze {
 			x.width = 10;
 			x.start_position.x = 1;
 			x.start_position.y = 1;
-			x.goal_position.x = 5;
+			x.goal_position.x = 4;
 			x.goal_position.y = 9;
 			x.move_count = 15;
 			x.map[0] = "##########";
 			x.map[1] = "#        #";
 			x.map[2] = "#        #";
 			x.map[3] = "#        #";
-			x.map[4] = "#        #";
-			x.map[5] = "#         ";
+			x.map[4] = "#         ";
+			x.map[5] = "#        #";
 			x.map[6] = "##########";
 			return x;
 		}
