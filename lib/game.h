@@ -26,10 +26,18 @@ namespace maze {
 		}
 		
 		std::string is_game_over() {
-			// examples
-			// win
-			// lose
-			// playing
+			
+			if (current_player.current_position.x == current_level.goal_position.x
+				&& current_player.current_position.y == current_level.goal_position.y) {
+				return "win";
+			}
+			
+			if (current_level.move_count == 0) {
+				return "lose";
+			}
+			
+			return "playing";
+			
 		}
 	};
 }
