@@ -1,3 +1,5 @@
+#include<conio.h>
+
 namespace maze {
 	struct game {
 		player current_player;
@@ -30,13 +32,43 @@ namespace maze {
 }
 		
 		char get_player_input() {
-//			example
-//			move with wasd
+			char move;
+			
+			while(move != 'w' && move != 'a' && move != 's' && move != 'd' )
+			{
+			move = getch();
+			}
+			return move;
 		}
 		
 		void make_move(char action) {
-			// change player.current_position
-			// change number of moves left
+			
+			position pre = current_player.current_position;
+			if( action == 'w')
+			{
+				current_player.current_position.x--;
+			}
+			else if( action == 'a'){
+				current_player.current_position.y--;
+			}
+			else if( action == 's')
+			{
+				current_player.current_position.x++;
+			}
+			else
+			{
+				current_player.current_position.y++;
+			}
+			
+			if(current_level.map[current_player.current_position.x][current_player.current_position.y] == '#')
+			{
+				current_player.current_position = pre;
+			}
+			else
+			{
+				current_level.move_count--;
+			}
+			
 		}
 		
 		std::string is_game_over() {
