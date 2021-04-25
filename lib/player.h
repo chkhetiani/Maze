@@ -5,8 +5,8 @@ namespace maze {
 		char icon;
 		
 		void select_player_icon() {
-//			example
-//			choose your icon: x
+			std::cout<<"choose your own icon";
+			std::cin>>icon;
 		}
 	};
 }
