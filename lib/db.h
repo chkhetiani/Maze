@@ -4,6 +4,7 @@ namespace maze {
 		int get_max_level() {
 		}
 		
+		
 		void write_max_level(int max_level) {
 		}
 		
