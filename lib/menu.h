@@ -20,7 +20,14 @@ namespace maze {
 		}
 		
 		int select_level() {
+				
+			int x = 0;
+			while (x > max_level || x < 1) {
+				std::cout << "choose level to play: ";
+				std::cin >> x;	
+			}
 			
+			return x;
 		}
 	};
 } // 20;30 samshabati 20 April
